@@ -11,17 +11,11 @@ public class Main
 
 	int maximum = array[0];
 
-	for (int i = 0; i < array.length; i++)
-	  {
-
-		if (maximum < array[i])
-		  {
-
-			maximum = array[i];
-
-		  }
-	  }
-
+	for (int arr: array){
+    	  if(maximum<arr){
+        	  maximum = arr;
+      		}
+    	}
 	System.out.println (maximum);
 
   }
