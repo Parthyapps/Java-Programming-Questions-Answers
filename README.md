@@ -1,6 +1,6 @@
 **Java Programming Questions and Answers**
 
- **Count the occurrence of a given character in string**
+**Count the occurrence of a given character in string**
 
 ```java
 public class Main{
@@ -16,7 +16,7 @@ public class Main{
         System.out.println(count);
     }
   }
-
+```
 **Find the largest number in an integer array**
 
 ```java
@@ -31,4 +31,5 @@ public class Main {
     }
     System.out.println(maximum);
   }
-}```
+}
+```
