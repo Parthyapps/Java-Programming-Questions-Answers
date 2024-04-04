@@ -1,6 +1,23 @@
 **Java Programming Questions and Answers**
 
- **Find the largest number in an integer array**
+ **Count the occurrence of a given character in string**
+
+```java
+public class Main{
+	 public static void main (String args[]){
+        String string = "this the string valueee";
+        char chr = 'v';
+        int count = 0;
+        for (char c : string.toCharArray()){
+            if (c == 'v'){
+                count++;
+            } 
+        }
+        System.out.println(count);
+    }
+  }
+
+**Find the largest number in an integer array**
 
 ```java
 public class Main {
@@ -14,4 +31,4 @@ public class Main {
     }
     System.out.println(maximum);
   }
-}
+}```
