@@ -33,3 +33,21 @@ public class Main {
   }
 }
 ```
+### To find the minimum and maximum values that can be calculated by summing exactly four of the five integers from the input set {1, 3, 5, 7, 9}
+```java
+ public static void main(String[] args) {
+      int[] numbers = {1, 3, 5, 7, 9};
+        Arrays.sort(numbers); // Sort the array in ascending order
+        long min = 0;
+        long max = 0;
+        // Calculate the minimum value by summing the first four elements
+        for (int i = 0; i < 4; i++) {
+            min += numbers[i];
+        }
+        // Calculate the maximum value by summing the last four elements
+        for (int i = 1; i < 5; i++) {
+            max += numbers[i];
+        }
+        System.out.println(min + " " + max);
+    }
+```
