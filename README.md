@@ -51,3 +51,12 @@ public class Main {
         System.out.println(min + " " + max);
     }
 ```
+**Write a program to reverse a string in Java**
+```java
+   public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+        StringBuilder StringBuilder = new StringBuilder(s);
+        System.out.println(StringBuilder.reverse().toString());
+    }
+```
