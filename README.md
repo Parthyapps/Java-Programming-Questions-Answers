@@ -65,7 +65,7 @@ public class Main {
 public static void main(String[] args){
      Scanner Scanner = new Scanner(System.in);
      int number = Scanner.nextInt();
-     boolean isPrime = false;
+     boolean isPrime = true;
      if (number<=1){
             isPrime = false;
             } else{
