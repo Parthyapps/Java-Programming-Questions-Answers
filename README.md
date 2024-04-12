@@ -113,3 +113,28 @@ public class Main {
     }
 }
 ```
+**write a program to print prime odd numbers from 1 to 100**
+```java
+public class Main{
+  public static void main (String[]args){
+	int result;
+	for (int i = 2; i <= 100; i++){
+		if (prime(i)){
+			System.out.println (" " + i);
+		  }
+	  }
+  }
+
+  public static boolean prime(int value){
+	if (value <= 1){
+		return false;
+	}
+	for (int i = 2; i <= Math.sqrt(value); i++){
+		if (value % i == 0){
+			return false;
+		  }
+	  }
+	return true;
+  }
+}
+```
