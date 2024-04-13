@@ -138,3 +138,20 @@ public class Main{
   }
 }
 ```
+**Write a program to remove duplicate elements from an array in Java**
+```java
+  public static void main(String args[]){
+    
+        
+        Integer[] array = {1,2,3,4,5,6,1,2,2,1,3,5};
+        
+        Set<Integer> set = new LinkedHashSet<>();
+        
+        for (int i: array){
+            
+            set.add(i);
+        } 
+        
+        System.out.println("removed duplicates"+ set);
+    }
+```
