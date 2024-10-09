@@ -1,6 +1,19 @@
 **Java Programming Questions and Answers**
 
 **Count the occurrence of a given character in string**
+``` kotlin
+
+fun main() {
+    val string = "Andriod program pm"
+
+    val result = countChar('m',string)
+    println(result)
+}
+
+fun countChar(letter: Char, string : String): Int{
+    return string.count { it==letter}
+}```
+
 
 ```java
 public class Main{
@@ -18,6 +31,23 @@ public class Main{
   }
 ```
 **Find the largest number in an integer array**
+```kotlin
+
+fun main() {
+ 
+    val array = intArrayOf(2,12,4,5 ,77)
+    
+    val result = findLargest(array)
+    
+    println(result)
+    
+}
+
+fun findLargest(array: IntArray): Int?{
+    
+    return array.maxOrNull()
+}
+```
 
 ```java
 public class Main {
