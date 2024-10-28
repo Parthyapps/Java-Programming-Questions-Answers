@@ -1,5 +1,34 @@
 **Java Programming Questions and Answers**
 
+1.Reverse String
+Explanation: This solution uses two pointers (left and right) to swap characters from both ends towards the middle. We create a character array for in-place modifications and convert it back to a string for output.
+```java
+ // create a class
+public class Reverse{
+  // create a main method
+  public static void main(String args[]){
+  String string = "Hellojava";
+  String _reverse = reverser(string);
+  System.out.println(_reverse);
+}
+  // methods to reverse the string
+  public static String reverser(String string){
+	// create a char variable and change the string to char array
+	char[] charater = string.toCharArray();
+	int left = 0;
+        // variable of length of the string
+	int right = string.length() -1;
+while (left < right){
+char temp = charater[left];
+charater[left] = charater[right];
+charater[right] = temp;
+left++;
+right--;
+}
+return new String(charater);
+  }
+}
+```
 **Count the occurrence of a given character in string**
 ``` kotlin
 
@@ -12,7 +41,8 @@ fun main() {
 
 fun countChar(letter: Char, string : String): Int{
     return string.count { it==letter}
-}```
+}
+```
 
 
 ```java
