@@ -17,14 +17,24 @@ public class Reverse{
 	char[] charater = string.toCharArray();
 	int left = 0;
         // variable of length of the string
-	int right = string.length() -1;
-while (left < right){
-char temp = charater[left];
-charater[left] = charater[right];
-charater[right] = temp;
-left++;
-right--;
-}
+	  int right = string.length() -1;
+		while (left < right){
+		char temp = charater[left];
+		charater[left] = charater[right];
+		charater[right] = temp;
+		left++;
+		right--;
+		}
+
+//using for loop
+ char[] chr = string.toCharArray();
+	    int n = chr.length;
+	    for (int i =0; i< n/2; i++){
+	        char temp = chr[i];
+	        chr[i] = chr[n - i -1];
+	        chr[n - i - 1] = temp;
+	        
+	    }
 return new String(charater);
   }
 }
