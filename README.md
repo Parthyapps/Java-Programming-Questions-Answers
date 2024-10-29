@@ -1,6 +1,6 @@
 **Java Programming Questions and Answers**
 
-1.Reverse String
+## 1.Reverse String
 Explanation: This solution uses two pointers (left and right) to swap characters from both ends towards the middle. We create a character array for in-place modifications and convert it back to a string for output.
 ```java
  // create a class
@@ -39,21 +39,47 @@ return new String(charater);
   }
 }
 ```
+
+## 2.3rd largest number 
+- We maintain three variables (first, second, third) representing the largest, second-largest, and third-largest values. As we iterate, we update these variables to capture the top three values.
+```java
+public class Largest {
+    public static void main(String[] args){
+        int[] array = {3, 5, 7, 2, 8, 6};
+        System.out.println(largestNumber(array));
+    }
+    public static int largestNumber(int[] number){
+        if(number.length < 3) return -1;
+        int first = Integer.MIN_VALUE;
+        int secound = Integer.MIN_VALUE;
+        int third = Integer.MIN_VALUE;
+        for (int array: number){
+            if ( array > first){
+                third = secound;
+                secound = first;
+                first = array;
+            }else if(array > secound && array < first){
+                third = secound;
+                secound = array;
+            } else if(array > third && array < secound){
+                third = array;
+            }
+        }
+        return third == Integer.MIN_VALUE ? -1: third;
+    }
+}
+```
 **Count the occurrence of a given character in string**
 ``` kotlin
-
 fun main() {
     val string = "Andriod program pm"
-
     val result = countChar('m',string)
     println(result)
 }
-
 fun countChar(letter: Char, string : String): Int{
     return string.count { it==letter}
 }
 ```
-
 
 ```java
 public class Main{
